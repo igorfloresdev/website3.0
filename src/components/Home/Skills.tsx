@@ -83,7 +83,7 @@ export default function Skills() {
       </h1>
       <div className='flex flex-wrap gap-x-32 gap-y-12 items-center justify-center my-32'>
         {skills.map((skill) => (
-          <div className='flex flex-col items-center'>
+          <div key={skill.name} className='flex flex-col items-center'>
             <p className='text-lg text-center font-bold'>
               {skill.hideName ? '\u00A0' : skill.name}
             </p>

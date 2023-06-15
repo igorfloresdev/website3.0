@@ -5,7 +5,7 @@ import Skills from '@/components/Home/Skills'
 export default function Home() {
   return (
     <main className='h-screen'>
-      <section className='' id='home'>
+      <section className='min-h-screen' id='home'>
         <Hero />
       </section>
       <section className='min-h-screen py-20 px-16' id='aboutme'>
