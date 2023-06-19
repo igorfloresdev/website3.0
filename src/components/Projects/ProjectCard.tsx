@@ -42,25 +42,31 @@ export default function ProjectCard({
         <p>{text}</p>
         <div className='card-actions justify-end py-4'>
           {button.github !== undefined ? (
-            <button className='btn btn-ghost'>
-              <a target='_blank' rel='noreferrer' href={button.github}>
-                <Image
-                  src='/assets/icons/github-white.svg'
-                  alt='github'
-                  width={40}
-                  height={40}
-                />
-              </a>
-            </button>
+            <a
+              className='btn btn-ghost'
+              target='_blank'
+              rel='noreferrer'
+              href={button.github}
+            >
+              <Image
+                src='/assets/icons/github-white.svg'
+                alt='github'
+                width={40}
+                height={40}
+              />
+            </a>
           ) : (
             ''
           )}
           {button !== undefined ? (
-            <button className='btn btn-primary'>
-              <a target='_blank' rel='noreferrer' href={button.href}>
-                {button.text}
-              </a>
-            </button>
+            <a
+              className='btn btn-primary'
+              target='_blank'
+              rel='noreferrer'
+              href={button.href}
+            >
+              {button.text}
+            </a>
           ) : (
             ''
           )}
