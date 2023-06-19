@@ -3,6 +3,30 @@ import ProjectCard from '../Projects/ProjectCard'
 export default function Projects() {
   const projects = [
     {
+      title: 'Pandora',
+      text: 'Poderoso de controle de estoque com front-end feito em Next.js, Backend em Node.js (Express) e banco de dados mongodb.',
+      src: 'pandora.png',
+      button: {
+        text: 'Ver projeto',
+        href: 'https://pandora-igorfloresdev.vercel.app',
+        github: 'https://github.com/igorfloresdev/pandora-web',
+      },
+      badges: [
+        {
+          text: 'Next.js',
+        },
+        {
+          text: 'Node.js',
+        },
+        {
+          text: 'Express',
+        },
+        {
+          text: 'Tailwind',
+        },
+      ],
+    },
+    {
       title: 'MyBox',
       text: 'Aplicativo de controle de estoque feito em React.JS. Login: igorflores | Senha: igorfloresdev',
       src: 'mybox.png',
